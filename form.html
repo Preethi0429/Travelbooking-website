@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website - Registration</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        
+        }
+
+        /* Body and container styling */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(background\ body.avif);
+           
+        }
+
+        .register-container {
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .register-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Form and input field styling */
+        .register-container input[type="text"],
+        .register-container input[type="email"],
+        .register-container input[type="tel"],
+        .register-container input[type="date"],
+        .register-container select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Button styling */
+        .register-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1d72b8;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .register-container button:hover {
+            background-color: #155a8a;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <h2>Register for Travel</h2>
+        <form>
+            <!-- Name Field -->
+            <input type="text" placeholder="Full Name" required>
+
+            <!-- Country Field -->
+            <select required>
+                <option value="" disabled selected>Select Country</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="India">India</option>
+                <option value="UK">UK</option>
+                <!-- Add more countries as needed -->
+            </select>
+
+            <!-- Phone Number Field -->
+            <input type="tel" placeholder="Phone Number" required>
+
+            <!-- Email Field -->
+            <input type="email" placeholder="Email Address" required>
+
+            <!-- Place Field -->
+            <input type="text" placeholder="Destination Place" required>
+
+            <!-- Start Date Field -->
+            <label>Start Date:</label>
+            <input type="date" required>
+
+            <!-- End Date Field -->
+            <label>End Date:</label>
+            <input type="date" required>
+
+            <!-- Package Type Field -->
+            <select required>
+                <option value="" disabled selected>Select Package Type</option>
+                <option value="Standard">Standard</option>
+                <option value="Premium">Premium</option>
+                <option value="Luxury">Luxury</option>
+            </select>
+
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
